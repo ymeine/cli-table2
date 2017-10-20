@@ -116,7 +116,7 @@ Cell.prototype.draw = function(lineNum,spanningCell){
   var padTop;
   switch (this.vAlign){
     case 'center':
-      padTop = Math.ceil(padLen / 2);
+      padTop = Math.floor(padLen / 2);
       break;
     case 'bottom':
       padTop = padLen;
